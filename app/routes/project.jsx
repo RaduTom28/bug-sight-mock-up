@@ -8,16 +8,16 @@ import Navbar from '../components/Navbar';
 export default function Project() {
    
     return (
-        <div>
-            <Navbar></Navbar>
-            <div className="flex justify-content-center align-items-center min-h-screen p-4" style={{ backgroundColor: 'var(--surface-ground)' }}>
+        <div className="h-screen" style={{ backgroundColor: 'var(--surface-ground)' }}>
             <ChatWidget />
+            <Navbar></Navbar>
+            <div className="flex justify-content-center pt-5" style={{ backgroundColor: 'var(--surface-ground)' }}>
             <div style={{ width: '100%', maxWidth: '1100px' }}>
                 <Card
                     title={
                         <div className="flex align-items-center justify-content-between">
                             <span className="text-2xl font-bold" style={{ color: 'var(--text-color)' }}>
-                                C Debugger Stepper
+                                Code snippet review
                             </span>
                             <Button
                                 icon="pi pi-arrow-left"
@@ -31,12 +31,12 @@ export default function Project() {
                         <div style={{ color: 'var(--text-color-secondary)' }}>
                             <p className="m-0">
                                 <i className="pi pi-user mr-2" />
-                                Main Developer: <strong>Jane Doe</strong>
+                                Main Developer: <strong>John Doe</strong>
                             </p>
                             <p className="m-0 mt-1">
                                 <i className="pi pi-github mr-2" />
                                 <a
-                                    href="https://github.com/janedoe/c-debugger-stepper"
+                                    href="https://github.com/RaduTom28/bug-sight-mock-up"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{

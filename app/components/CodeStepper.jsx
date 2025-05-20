@@ -11,7 +11,7 @@ export default function CodeStepper() {
     const codeWithBug = `
 
     int main() {
-        printf("Hello World!) // Missing closing quote
+        printf("Hello World!") // Missing semicolon
         return 0;
     }
         `.trim();
@@ -19,7 +19,7 @@ export default function CodeStepper() {
     const codeWithHighlight = `
 
     int main() {
-        printf("Hello World!) // Missing closing quote
+        printf("Hello World!") // Missing semicolon
         return 0;
     }
     `.trim(); 
@@ -27,7 +27,7 @@ export default function CodeStepper() {
     return (
         <div className="card" style={{ maxWidth: '700px', margin: 'auto' }}>
             <Stepper activeStep={activeStep} onStepChange={(e) => setActiveStep(e.index)} linear>
-                <StepperPanel header="Insert Code">
+                <StepperPanel header="Original code">
                     <SyntaxHighlighter language="c" style={materialLight} showLineNumbers>
                         {codeWithBug}
                     </SyntaxHighlighter>

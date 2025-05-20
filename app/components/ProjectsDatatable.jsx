@@ -9,7 +9,7 @@ const projectData = Array.from({ length: 20 }).map((_, i) => ({
     id: i + 1,
     title: `Project ${i + 1}`,
     developer: `Dev ${String.fromCharCode(65 + (i % 10))}`, // Dev A - Dev J
-    github: `https://github.com/user/project-${i + 1}`
+    github: `https://github.com/RaduTom28/bug-sight-mock-up`
 }));
 
 export default function ProjectsDatatable() {
@@ -41,7 +41,7 @@ export default function ProjectsDatatable() {
     );
 
     return (
-        <div className="flex justify-content-center p-4" style={{ backgroundColor: 'var(--surface-ground)' }}>
+        <div className="flex justify-content-center p-5" style={{ backgroundColor: 'var(--surface-ground)' }}>
             <Card
                 title="Available Projects"
                 subTitle="Explore the available debugging projects"

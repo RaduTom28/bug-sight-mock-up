@@ -18,7 +18,7 @@ export default function Navbar() {
         {
             label: 'Projects',
             icon: 'pi pi-briefcase',
-            command: () => navigate('/projects') // <- This is the required button
+            command: () => navigate('/projects') 
         },
         {
             label: 'Docs',
@@ -34,21 +34,16 @@ export default function Navbar() {
 
     const start = (
         <span className="text-xl font-semibold" style={{ color: 'var(--text-color)' }}>
-            🧠 Debugger App
+            Bug Sight
         </span>
     );
 
     const end = (
         <div className="flex align-items-center gap-3">
-            <span className="p-input-icon-left">
-                <i className="pi pi-search" />
-                <InputText placeholder="Search" className="p-inputtext-sm" />
-            </span>
-
+            <InputText icon = "pi pi-search" placeholder="Search" className="p-inputtext-sm" />
             <Button icon="pi pi-bell" className="p-button-text p-button-rounded p-button-sm" />
-            <Badge value="3" severity="info" />
-
             <Avatar label="JD" size="small" className="ml-2" style={{ backgroundColor: '#2196F3', color: '#ffffff' }} />
+            <Button icon="pi pi-power-off" label="Logout" severity="danger" onClick={ () => { navigate('/login') }}/>
         </div>
     );
 

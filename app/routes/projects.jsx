@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar";
 import ProjectsDatatable from "../components/ProjectsDatatable";
 
 
-export default function Login(){
+export default function Projects(){
     return (
-        <div>
+        <div className="h-screen" style={{ backgroundColor: 'var(--surface-ground)' }}>
             <Navbar />
-            <ProjectsDatatable></ProjectsDatatable>
+            <ProjectsDatatable />
             <ChatWidget />
         </div>
     );

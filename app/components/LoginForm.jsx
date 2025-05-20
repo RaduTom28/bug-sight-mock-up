@@ -4,12 +4,13 @@ import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 import { FloatLabel } from 'primereact/floatlabel';
-        
+import { useNavigate } from 'react-router';        
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const toast = useRef(null);
+    const navigate = useNavigate();
 
     const handleLogin = () => {
         if (username === 'johndoe' && password === 'password') {
@@ -19,6 +20,8 @@ const LoginForm = () => {
                 detail: `Welcome, ${username}!`,
                 life: 3000
             });
+            window.setTimeout(() => navigate("/"), 1500);
+
         } else {
             toast.current.show({
                 severity: 'error',
