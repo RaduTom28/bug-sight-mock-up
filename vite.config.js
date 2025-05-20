@@ -4,4 +4,5 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [reactRouter(), tailwindcss()],
+  base: "/bug-sight-mock-up"
 });
