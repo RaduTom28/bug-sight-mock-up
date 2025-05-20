@@ -1,6 +1,6 @@
 {
   "name": "bug-sight-mock-up",
-  "homepage": "https://RaduTom28.github.io/bug-sight-mock-up/",
+  "homepage": "https://bug-sight-mock-up.netlify.app/",
   "private": true,
   "type": "module",
   "scripts": {
