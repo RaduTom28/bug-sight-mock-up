@@ -11,6 +11,8 @@
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
     "isbot": "^5.1.27",
+    "primeflex": "^4.0.0",
+    "primeicons": "^7.0.0",
     "primereact": "^10.9.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
