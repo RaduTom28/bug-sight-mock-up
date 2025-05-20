@@ -1,15 +1,24 @@
-@import "tailwindcss";
+/* PrimeReact Theme */
+@import 'primereact/resources/themes/lara-light-blue/theme.css';
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/* PrimeReact Core Styles */
+@import 'primereact/resources/primereact.min.css';
+
+/* PrimeIcons for buttons and UI elements */
+@import 'primeicons/primeicons.css';
+
+/* PrimeFlex for layout utilities (optional but recommended) */
+@import 'primeflex/primeflex.css';
+
+
+Custom App Styles
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--surface-ground);
+    color: var(--text-color);
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+h1, h2, h3, h4, h5 {
+    color: var(--text-color);
 }
