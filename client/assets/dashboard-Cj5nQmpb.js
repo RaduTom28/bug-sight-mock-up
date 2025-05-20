@@ -1,0 +1,1 @@
+import{w as r}from"./with-props-BgL0SJop.js";import{o}from"./chunk-D4RADZKF-uPabYpN7.js";import{N as t,C as s}from"./Navbar-CK8nft7J.js";import"./inputtext.esm-DJeJOPqC.js";import"./index-G-eRZ5x0.js";const e=r(function(){return o.jsxs("div",{children:[o.jsx(t,{}),o.jsx(s,{})]})});export{e as default};
