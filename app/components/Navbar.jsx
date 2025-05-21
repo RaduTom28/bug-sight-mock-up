@@ -21,8 +21,8 @@ export default function Navbar() {
             command: () => navigate('/projects') 
         },
         {
-            label: 'Docs',
-            icon: 'pi pi-file',
+            label: 'Vault',
+            icon: 'pi pi-lock',
             disabled: true
         },
         {
