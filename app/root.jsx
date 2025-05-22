@@ -31,7 +31,7 @@ export function Layout({ children }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{backgroundColor: 'var(--surface-ground)'}}>
         {children}
         <ScrollRestoration />
         <Scripts />
