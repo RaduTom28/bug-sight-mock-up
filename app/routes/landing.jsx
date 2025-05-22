@@ -30,12 +30,12 @@ const LandingPage = () => {
     <div className="p-6 space-y-8">
       <section className="text-center py-10">
         <h1 className="text-4xl font-bold mb-4">BugSight</h1>
-        <Image src="/bugSightLogo.png" alt="Logo" width="150"></Image>
+        <Image src="/logo.png" alt="Logo" width="150"></Image>
         <p className="text-lg max-w-2xl mx-auto">
           Motto
         </p>
         <div className="mt-6">
-          <Button label="Get Started" className="p-button-raised p-button-lg" onClick={() => navigate('/')}/>
+          <Button label="Get Started" className="p-button-raised p-button-lg" onClick={() => navigate('/dashboard')}/>
         </div>
       </section>
 

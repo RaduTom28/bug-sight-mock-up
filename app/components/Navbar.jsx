@@ -13,7 +13,7 @@ export default function Navbar() {
         {
             label: 'Home',
             icon: 'pi pi-home',
-            command: () => navigate('/')
+            command: () => navigate('/dashboard')
         },
         {
             label: 'Projects',
