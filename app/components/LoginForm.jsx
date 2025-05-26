@@ -20,7 +20,7 @@ const LoginForm = () => {
                 detail: `Welcome, ${username}!`,
                 life: 3000
             });
-            window.setTimeout(() => navigate("/"), 1500);
+            window.setTimeout(() => navigate("/dashboard"), 1500);
 
         } else {
             toast.current.show({
